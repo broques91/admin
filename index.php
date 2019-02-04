@@ -16,7 +16,7 @@
 <body>
     <h1>Inscription</h1>
     <p>Bienvenue sur mon site, inscrivez-vous pour plus d'informations.</p>
-    <p>Déjà inscrit ? <a href="Connexion.php">Connectez-vous</a>
+    <p>Déjà inscrit ? <a href="connection.php">Connectez-vous</a>
 
     <form method="post" action="index.php">
         <table>
