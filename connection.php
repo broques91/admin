@@ -31,7 +31,9 @@
                     <td><input type="password" name="password" placeholder="Ex : ***** "></td>
                 </tr>
             </table>
-            <button type="submit">Connexion</button>
+            <div class="text-center">
+                <button type="submit">Connexion</button>
+            </div>
         </form> 
     </div>
 </body>

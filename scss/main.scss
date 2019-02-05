@@ -33,14 +33,24 @@ header{
         margin: 0;
     }
 }
+.container{
+    width: 768px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+table{
+    margin: 10px;
+}
 
 form{
     text-align: left;
     display: inline-block;
 }
 
-.container{
-    width: 768px;
-    margin: 0 auto;
-    padding: 15px;
+#error{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }

@@ -1,7 +1,15 @@
 <?php
-// Projet PHP : Un espace membre
+if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST[ 'password_confirm'])){
+    
+    $pseudo        = $_POST['pseudo'];
+    $email         = $_POST['email'];
+    $password      = $_POST['password'];
+    $pass_confirm  = $_POST['password_confirm'];
 
-// INSCRIPTION
+    if($password != $pass_confirm){
+        header('Location: index.php?error=1&pass=1');
+    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -22,6 +30,13 @@
         <div class="text-center">
             <p>Bienvenue sur mon site, inscrivez-vous pour plus d'informations.</p>
             <p>Déjà inscrit ? <a href="connection.php">Connectez-vous</a>
+            <?php
+                if(isset($_GET['error'])){
+                    if (isset($_GET['pass'])){
+                        echo '<p id="error"> Les mots de passe ne sont pas identiques. </p>';
+                    }
+                }
+            ?>
         </div>
 
         <div class="text-center">
@@ -44,7 +59,9 @@
                         <td><input type="password" name="password_confirm" placeholder="Ex : *****"></td>
                     </tr>
                 </table>
-                <button type="submit">Inscription</button>
+                <div class="text-center">
+                    <button type="submit">Inscription</button>
+                </div>
             </form> 
         </div>
     </div>
