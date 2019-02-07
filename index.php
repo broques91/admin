@@ -59,19 +59,19 @@
                 <table>
                     <tr>
                         <td>Pseudo</td>
-                        <td><input type="text" name="pseudo" placeholder="Ex : Bastien"></td>
+                        <td><input type="text" name="pseudo" placeholder="Ex : Bastien" required></td>
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td><input type="email" name="email" placeholder="Ex : example@gmail.com"></td>
+                        <td><input type="email" name="email" placeholder="Ex : example@gmail.com" required></td>
                     </tr>
                     <tr>
                         <td>Mot de passe</td>
-                        <td><input type="password" name="password" placeholder="Ex : ***** "></td>
+                        <td><input type="password" name="password" placeholder="Ex : ***** " required></td>
                     </tr>
                     <tr>
                         <td>Confirmation du mot de passe</td>
-                        <td><input type="password" name="password_confirm" placeholder="Ex : *****"></td>
+                        <td><input type="password" name="password_confirm" placeholder="Ex : *****" required></td>
                     </tr>
                 </table>
                 <div class="text-center">
